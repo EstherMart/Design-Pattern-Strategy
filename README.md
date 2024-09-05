@@ -10,20 +10,6 @@ Em um jogo de RPG, os personagens podem adotar diferentes comportamentos depende
 
 **Solução**: Para isso, podemos implementar diferentes estratégias de comportamento que podem ser alteradas conforme necessário (Padrão Strategy).
 
-```mermaid
-stateDiagram-v2
-    [*] --> Ataque: Seleciona Ataque
-    [*] --> Defesa: Seleciona Defesa
-    [*] --> Fuga: Seleciona Fuga
-    [*] --> Exploracao: Seleciona Exploração
-    [*] --> InteracaoSocial: Seleciona Interação Social
-
-    Ataque --> [*]
-    Defesa --> [*]
-    Fuga --> [*]
-    Exploracao --> [*]
-    InteracaoSocial --> [*]
-```
 <p align="center">
 <img width="451" alt="image" src="https://github.com/user-attachments/assets/da022f08-e313-4bea-8aeb-649b2d672ff7">
 </p>
@@ -45,6 +31,21 @@ Ao usar o Design Pattern Strategy permitimos que o comportamento de um personage
 - **Classes Concretas (ComportamentoAtacar, ComportamentoDefender, etc.)**: Implementam a lógica específica para cada comportamento.
 - **Classe Personagem**: Usa uma instância de Comportamento para executar o comportamento atual. 
 - **Interface para o Usuário**: Fornece uma maneira simples de selecionar e aplicar diferentes comportamentos ao personagem.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Ataque: Seleciona Ataque
+    [*] --> Defesa: Seleciona Defesa
+    [*] --> Fuga: Seleciona Fuga
+    [*] --> Exploracao: Seleciona Exploração
+    [*] --> InteracaoSocial: Seleciona Interação Social
+
+    Ataque --> [*]
+    Defesa --> [*]
+    Fuga --> [*]
+    Exploracao --> [*]
+    InteracaoSocial --> [*]
+```
 
 
 ## Estrutura do Projeto
