@@ -48,6 +48,21 @@ Ao usar o Design Pattern Strategy permitimos que o comportamento de um personage
 </p>
 
 ## Estrutura do Projeto
+```
+src/
+├── entities/
+│   ├── abstracts/
+│   │   └── Comportamento.java
+│   └── concrets/
+│       ├── ComportamentoAtacar.java
+│       ├── ComportamentoDefender.java
+│       ├── ComportamentoFugir.java
+|       ├── ComportamentoExplorar.java
+|       ├── ComportamentoInteragir.java
+│       └── Personagem.java
+├── JogoRPG.java
+```
+
 - Implementar a interface da estratégia, que definirá um método comum para todas as estratégias.
 - Criar ao menos três classes concretas que implementem diferentes estratégias para resolver o problema proposto.
 - Desenvolver uma classe de contexto que utilize a interface da estratégia para aplicar diferentes estratégias de forma intercambiável.
