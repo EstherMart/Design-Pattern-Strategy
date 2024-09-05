@@ -51,26 +51,49 @@ Ao usar o Design Pattern Strategy permitimos que o comportamento de um personage
 ```
 src/
 ├── entities/
-│   ├── abstracts/
-│   │   └── Comportamento.java
-│   └── concrets/
-│       ├── ComportamentoAtacar.java
-│       ├── ComportamentoDefender.java
-│       ├── ComportamentoFugir.java
-|       ├── ComportamentoExplorar.java
-|       ├── ComportamentoInteragir.java
-│       └── Personagem.java
-├── JogoRPG.java
+│   ├── Comportamento.java
+│   ├── ComportamentoAtacar.java
+│   ├── ComportamentoDefender.java
+│   ├── ComportamentoFugir.java
+│   ├── ComportamentoExplorar.java
+│   ├── ComportamentoInteragir.java
+│   └── Personagem.java
+└── JogoRPG.java
 ```
 
-- Implementar a interface da estratégia, que definirá um método comum para todas as estratégias.
-- Criar ao menos três classes concretas que implementem diferentes estratégias para resolver o problema proposto.
-- Desenvolver uma classe de contexto que utilize a interface da estratégia para aplicar diferentes estratégias de forma intercambiável.
-- Implementar uma interface para o usuário (simples) que permita selecionar e aplicar diferentes estratégias em tempo de execução.
-
-## Testes realizados
+### Observações
+- Classe Abstrata Comportamento.java: A interface da estratégia, que definirá um método comum para todas as estratégias.
+- Classe Concreta Personagem.java: A classe de contexto que utilize a interface da estratégia para aplicar diferentes estratégias de forma intercambiável.
 
 ## Instruções para execução
-- Instalar o java
-- baixar o repo
-- executar no terminal
+### Windows
+1. Abra o Prompt de Comando:
+- Navegue até a pasta lib/win onde os scripts compiler.bat e runner.bat estão localizados.
+- Mude os arquivos para a raiz do seu diretório.
+2. Compile o Projeto:
+- Execute o script compiler para compilar os arquivos Java. Isso criará a pasta bin e colocará os arquivos .class nela.
+```
+compiler.bat
+```
+3. Execute o Projeto:
+- Após a compilação bem-sucedida, execute o script runner para rodar a aplicação Java.
+```
+runner.bat
+```
+### Mac ou Linux
+1. Salve os scripts:
+- Crie dois arquivos chamados compiler.sh e runner.sh na raiz do projeto.
+2. Torne os scripts executáveis:
+```
+chmod +x compiler.sh runner.sh
+```
+3. Compile o Projeto:
+- Execute o script compiler.sh para compilar o projeto:
+```
+compiler.sh
+```
+4. Execute o Projeto:
+- Após a compilação, execute o script runner.sh para rodar a aplicação:
+```
+runner.sh
+```
