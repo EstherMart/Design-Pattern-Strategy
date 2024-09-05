@@ -66,8 +66,9 @@ src/
 - Classe Concreta Personagem.java: A classe de contexto que utilize a interface da estratégia para aplicar diferentes estratégias de forma intercambiável.
 
 ## Instruções para execução
+### Windows
 1. Abra o Prompt de Comando:
-- Navegue até a pasta lib/win ou lib/mac-linux onde os scripts compiler.bat/compiler.sh e runner.bat/runner.sh estão localizados.
+- Navegue até a pasta lib/win onde os scripts compiler.bat e runner.bat estão localizados.
 - Mude os arquivos para a raiz do seu diretório.
 2. Compile o Projeto:
 - Execute o script compiler para compilar os arquivos Java. Isso criará a pasta bin e colocará os arquivos .class nela.
@@ -78,4 +79,21 @@ compiler.bat
 - Após a compilação bem-sucedida, execute o script runner para rodar a aplicação Java.
 ```
 runner.bat
+```
+### Mac ou Linux
+1. Salve os scripts:
+- Crie dois arquivos chamados compiler.sh e runner.sh na raiz do projeto.
+2. Torne os scripts executáveis:
+```
+chmod +x compiler.sh runner.sh
+```
+3. Compile o Projeto:
+- Execute o script compiler.sh para compilar o projeto:
+```
+compiler.sh
+```
+4. Execute o Projeto:
+- Após a compilação, execute o script runner.sh para rodar a aplicação:
+```
+runner.sh
 ```
