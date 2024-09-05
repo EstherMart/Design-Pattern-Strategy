@@ -62,8 +62,9 @@ src/
 ```
 
 ### Observações
-- Classe Abstrata Comportamento.java: A interface da estratégia, que definirá um método comum para todas as estratégias.
-- Classe Concreta Personagem.java: A classe de contexto que utilize a interface da estratégia para aplicar diferentes estratégias de forma intercambiável.
+- **Classe Abstrata Comportamento.java**: A interface da estratégia, que definirá um método comum para todas as estratégias.
+- **Classe Concreta Personagem.java**: A classe de contexto que utilize a interface da estratégia para aplicar diferentes estratégias de forma intercambiável.
+- **JogoRPG.java**: É interface para o usuário (simples) que permita selecionar e aplicar diferentes estratégias em tempo de execução.
 
 ## Instruções para execução
 ### Windows
