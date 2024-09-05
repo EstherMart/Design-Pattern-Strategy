@@ -8,11 +8,25 @@ Em um jogo de RPG, os personagens podem adotar diferentes comportamentos depende
 ### Problema vs Solução
 **Problema Principal**: Como gerenciar e mudar o comportamento de um personagem de forma flexível e dinâmica, sem a necessidade de modificar o código existente ou adicionar complexidade excessiva ao sistema, sendo capaz de reutilizar o código?
 
-[Foto do diagrama]
-
 **Solução**: Para isso, podemos implementar diferentes estratégias de comportamento que podem ser alteradas conforme necessário (Padrão Strategy).
 
-[Foto do diagrama]
+```mermaid
+stateDiagram-v2
+    [*] --> Ataque: Seleciona Ataque
+    [*] --> Defesa: Seleciona Defesa
+    [*] --> Fuga: Seleciona Fuga
+    [*] --> Exploracao: Seleciona Exploração
+    [*] --> InteracaoSocial: Seleciona Interação Social
+
+    Ataque --> [*]
+    Defesa --> [*]
+    Fuga --> [*]
+    Exploracao --> [*]
+    InteracaoSocial --> [*]
+```
+<p align="center">
+<img width="451" alt="image" src="https://github.com/user-attachments/assets/da022f08-e313-4bea-8aeb-649b2d672ff7">
+</p>
 
 ## Descrição da escolha do design 
 
