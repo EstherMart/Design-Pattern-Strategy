@@ -51,16 +51,14 @@ Ao usar o Design Pattern Strategy permitimos que o comportamento de um personage
 ```
 src/
 ├── entities/
-│   ├── abstracts/
-│   │   └── Comportamento.java
-│   └── concrets/
-│       ├── ComportamentoAtacar.java
-│       ├── ComportamentoDefender.java
-│       ├── ComportamentoFugir.java
-|       ├── ComportamentoExplorar.java
-|       ├── ComportamentoInteragir.java
-│       └── Personagem.java
-├── JogoRPG.java
+│   ├── Comportamento.java
+│   ├── ComportamentoAtacar.java
+│   ├── ComportamentoDefender.java
+│   ├── ComportamentoFugir.java
+│   ├── ComportamentoExplorar.java
+│   ├── ComportamentoInteragir.java
+│   └── Personagem.java
+└── JogoRPG.java
 ```
 
 - Implementar a interface da estratégia, que definirá um método comum para todas as estratégias.
