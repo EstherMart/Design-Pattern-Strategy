@@ -1,5 +1,4 @@
-package entities.concrets;
-import entities.abstracts.Comportamento;
+package entities;
 
 public class ComportamentoAtacar implements Comportamento {
     @Override

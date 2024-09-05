@@ -1,6 +1,4 @@
-package entities.concrets;
-
-import entities.abstracts.Comportamento;
+package entities;
 
 public class Personagem {
     private Comportamento comportamento;

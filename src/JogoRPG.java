@@ -1,6 +1,11 @@
-import entities.concrets.*;
-
 import java.util.Scanner;
+
+import entities.ComportamentoAtacar;
+import entities.ComportamentoDefender;
+import entities.ComportamentoExplorar;
+import entities.ComportamentoFugir;
+import entities.ComportamentoInteragir;
+import entities.Personagem;
 
 public class JogoRPG {
     public static void main(String[] args) {
