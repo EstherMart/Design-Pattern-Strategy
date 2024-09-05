@@ -57,6 +57,8 @@ src/
 │       ├── ComportamentoAtacar.java
 │       ├── ComportamentoDefender.java
 │       ├── ComportamentoFugir.java
+|       ├── ComportamentoExplorar.java
+|       ├── ComportamentoInteragir.java
 │       └── Personagem.java
 ├── JogoRPG.java
 ```
