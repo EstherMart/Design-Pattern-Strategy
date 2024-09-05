@@ -68,6 +68,7 @@ src/
 ## Instruções para execução
 1. Abra o Prompt de Comando:
 - Navegue até a pasta lib/win ou lib/mac-linux onde os scripts compiler.bat/compiler.sh e runner.bat/runner.sh estão localizados.
+- Mude os arquivos para a raiz do seu diretório.
 2. Compile o Projeto:
 - Execute o script compiler para compilar os arquivos Java. Isso criará a pasta bin e colocará os arquivos .class nela.
 ```
